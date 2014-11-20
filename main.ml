@@ -12,16 +12,16 @@ let afficher_texte (fenetre:#render_window) font t =
   let textgr =
     new text
 	~string:t
-	~position:(w /. 2., h -. 25.)
+	~position:(w /. 2., h -. 50.)
 	~font
-	~character_size:100 ()
+	~character_size:75 ()
   in
   let rect = textgr#get_local_bounds in
   textgr#set_origin (rect.FloatRect.width /. 2.) (rect.FloatRect.height) ;
   fenetre#draw textgr
 	       
 let _ =
-  let font = new font (`File "tahoma.ttf") in
+  let font = new font (`File "sansation.ttf") in
   
   let vm = VideoMode.create ~w:800 ~h:1300 () in
   let context = ContextSettings.create ~antialising_level:50 () in
