@@ -1,0 +1,5 @@
+S .
+
+P ocsfml.system
+P ocsfml.window
+P ocsfml.graphics
